@@ -12,23 +12,38 @@ public class ConnectionManager {
     
     public Connection getconnection (){
     
-        String user     = "root";
-        String password = "";
-        String bd       = "pagina_libros";
-        String host     = "localhost";
+        String user     = "upbtrambzjurlfnc";
+        String password = "nU4uNO24wREcjUt1DPE7";
+        String bd       = "buhfwk5q86qixqdiypxn";
+        String host     = "buhfwk5q86qixqdiypxn-mysql.services.clever-cloud.com";
         String port     = "3306";
         String timezone = "UTC";
         
         
+        //String user     = "root";
+        //String password = "";
+        //String bd       = "pagina_libros";
+        //String host     = "localhost";
+        //String port     = "3306";
+        //String timezone = "UTC";
+        
+        
+
+    
+    
+    
         String     url;
         
         Connection con;
         
         con = null;
     
-        url = "jdbc:mysql://" + host + ":" + port + "/" + bd + "?user=" + user + "&password=" + password + "&serverTimezone=" + timezone;
-          
-        System.out.println("pincho por aca!");
+        url = "jdbc:mysql://" + host + ":" + port + "/" + bd + "?user=" + user + "&password=" + password + "&serverTimezone=" + timezone + "&useSSL=false";
+        
+       // url = "jdbc:mysql://" + host + ":" + port + "/" + bd + "?user=" + user + "&password=" + password + "&serverTimezone=" + timezone;  
+       
+       
+       // System.out.println("pincho por aca!");
        try {
                         
 
